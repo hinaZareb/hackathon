@@ -1,0 +1,58 @@
+<html lang="en"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editable Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Editable Resume</h1>
+    <form id="resume-form">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" placeholder="Enter your phone number" required>
+
+
+
+            <!-- Profile Picture Upload -->
+            <label for="profile-pic">Profile Picture:</label>
+            <input type="file" id="profile-pic" accept="image/*">
+
+
+            
+        </fieldset>
+        <fieldset>
+            <legend>Education</legend>
+            
+            <textarea id="education" placeholder="Enter your education" rows="4" required></textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Experience</legend>
+            
+            <textarea id="experience" placeholder="Enter your experience" rows="4" required></textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Skills</legend>
+            
+            <textarea id="skills" placeholder="Enter your skills" rows="4" required></textarea>
+        </fieldset>
+
+        <button type="submit">Generate Resume</button>
+    </form>
+    <br>
+
+    <!-- Editable resume display area -->
+    <div id="resume-display"  contenteditable="true">
+        <!-- Resume will be generated here -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
